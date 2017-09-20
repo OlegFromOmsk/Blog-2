@@ -8,15 +8,21 @@ body{
     font-family: Gabriola;
     color: #2a2a29;
     background-color: #9cd9f1;
-    
 }
-.image{
-    height: 220px;
-    width: 150px;
-    border: 1px solid #2a2a29;
+.new_work__item img{
+    height: 240px;
+    width: 170px;
+    border: 1px solid #9cd9f1;
+	padding: 5px;
     border-radius: 70%;
 }
-
+.all_work__item img{
+height: 240px;
+    width: 170px;
+    border: 1px solid white;
+	padding: 5px;
+    border-radius: 70%;
+}
 .popup {
 	position: absolute;
 	height:100%;
@@ -26,7 +32,6 @@ body{
 	display:none;
 	text-align:center;
 }
-
 .popup_bg {
 	background:rgba(0,0,0,0.4);
 	position: fixed;
@@ -34,8 +39,6 @@ body{
 	height:100%;
 	width:100%;
 }
-
-
 .popup_img {
 	position: fixed;
 	margin:0 auto;
