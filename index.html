@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/main.css">
     <SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
     <script type="text/javascript" src="js/popup_img.js" defer></script>   
+        <script type="text/javascript" src="js/main.js" defer></script>  
      
 </head>
 <body>
@@ -19,7 +20,7 @@
                     <nav>
                 	    <ul class='header_nav'>
                              <li>
-                                 <a href="#all_work">Платья</a>
+                                 <a id="Dress" onclick="dressClick()" href="#all_work">Платья</a>
                              </li>
                              <li>                                 
                                  <a href="#all_work">Юбки</a>
@@ -62,21 +63,21 @@
 					<p>Из нового</p>
 				</div>
 				<div class="new_work clearfix">
-					<div class="new_work__item">
-						<img class="image" src="img/new_1.png" alt="New">
-						<p>Блуза с юбкой. <br>
-							Верх - атлас, юбка - хлопок. <br>
-							Срок изготовления от 5 дней.</p>
+					<div class="productItem">
+						<img class="productItem__img" src="img/new_1.png" alt="New">
+						<p class="productItem__descr">Блуза с юбкой. <br>
+														Верх - атлас, юбка - хлопок. <br>
+														Срок изготовления от 5 дней.</p>
 					</div>
-					<div class="new_work__item">
-						<img src="img/new_2_s.png" alt="New">
-						<p>Платье-халат из шелка. <br>
-							Срок изготовления от 3 дней.</p>
+					<div class="productItem productItem-left">
+						<img  class="productItem__img" src="img/new_1.png" alt="New">
+						<p class="productItem__descr">Платье-халат из шелка. <br>
+														Срок изготовления от 3 дней.</p>
 					</div>
-					<div class="new_work__item">
-						<img src="img/new_3_s.png" alt="New">
-						<p>Платье из шелка с вставками кружев. <br> 
-							Срок изготовления от 5 дней.</p>
+					<div class="productItem productItem-left">
+						<img class="productItem__img" src="img/new_1.png" alt="New">
+						<p class="productItem__descr">Платье из шелка с вставками кружев. <br> 
+														Срок изготовления от 5 дней.</p>
 					</div>
 				</div>
 				<div class="butt_up"></div>
@@ -92,7 +93,7 @@
                 <nav>
                              <ul class='header_nav'>
                                  <li>
-                                     <a href="#">Платья</a>
+                                     <a href="#" alt="Dress">Платья</a>
                                  </li>
                                  <li>                                 
                                      <a href="#">Юбки</a>
@@ -109,29 +110,31 @@
                              </ul>
                  </nav>
                 <div class="all_work clearfix">
-                    <div class="all_work__item">
-                            <img class="image" src="img/dress_1.png" alt="Dress">
-                            <p>Блуза с юбкой. <br>
-                                Верх - атлас, юбка - хлопок. <br>
-                                Срок изготовления от 5 дней.</p>
+                    <div class="productItem productItem-firstNew">
+                            <img class="productItem__img productItem__img-border" src="img/dress_1.png" alt="Dress">
+                            <p class="productItem__descr">Блуза с юбкой. <br>
+															Верх - атлас, юбка - хлопок. <br>
+															Срок изготовления от 5 дней.</p>
                     </div>
-                    <div class="all_work__item">
-                            <img class="image" src="img/dress_2.png" alt="Dress">
-                            <p>Платье-халат из шелка. <br>
-                                Срок изготовления от 3 дней.</p>
+                    <div class="productItem productItem-leftNew">
+                            <img class="productItem__img productItem__img-border" src="img/dress_2.png" alt="Dress">
+                            <p class="productItem__descr">Платье-халат из шелка. <br>
+                                							Срок изготовления от 3 дней.</p>
                     </div>
-                    <div class="all_work__item">
-                            <img src="img/dress_3_s.png" alt="Dress">
-                            <p>Платье из шелка с вставками кружев. <br> 
-                                Срок изготовления от 5 дней.</p>
+                    <div class="productItem productItem-leftNew">
+                            <img class="productItem__img productItem__img-border" src="img/dress_1.png" alt="Dress">
+                            <p class="productItem__descr">Платье из шелка с вставками кружев. <br> 
+                                							Срок изготовления от 5 дней.</p>
                     </div>
-                    <div class="all_work__item">
-                            <img src="img/dress_4_s.png" alt="Dress">
-                            <p>Платье из шелка с вставками кружев. <br> 
-                                Срок изготовления от 5 дней.</p>
+                    <div class="productItem productItem-leftNew">
+                            <img class="productItem__img productItem__img-border" src="img/dress_2.png" alt="Dress">
+                            <p class="productItem__descr">Платье из шелка с вставками кружев. <br> 
+                                							Срок изготовления от 5 дней.</p>
                     </div>
                 </div>
-                <a class='view_more' href="#"><p>Посмотреть еще...</p></a>
+                <div class="btnMore">
+                	<a class="btnMore__link" href="#"><p class="btnMore__link-text">Посмотреть еще...</p></a>
+                </div>
                 <div class="butt_up"></div>
            </div>
         </section>

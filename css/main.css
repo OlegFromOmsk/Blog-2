@@ -9,20 +9,7 @@ body{
     color: #2a2a29;
     background-color: #9cd9f1;
 }
-.new_work__item img{
-    height: 240px;
-    width: 170px;
-    border: 1px solid #9cd9f1;
-	padding: 5px;
-    border-radius: 70%;
-}
-.all_work__item img{
-height: 240px;
-    width: 170px;
-    border: 1px solid white;
-	padding: 5px;
-    border-radius: 70%;
-}
+
 .popup {
 	position: absolute;
 	height:100%;
@@ -47,6 +34,7 @@ height: 240px;
 	max-width:94%;
 	margin:1% 0 0 0;
 }
+
 header{
     margin: 0 auto;
     width: 960px;
@@ -161,52 +149,43 @@ nav{
 	margin: 10px 0 20px 0;
 	padding: 0;
 }
-.new_work__item{
-    width: 220px;
+.new_work{
+	margin: auto;
+}
+.productItem{
+    width: 200px;
     float: left;
     text-align: center;
+	margin-left: 80px;
 }
-.new_work__item p{
+.productItem-firstNew{
+	margin-left: 25px;
+}
+.productItem-left{
+	margin-left: 100px;
+}
+.productItem-leftNew{
+	margin-left: 40px;
+}
+.productItem__img{
+    height: 240px;
+    width: 170px;
+    border: 1px solid #9cd9f1;
+	padding: 5px;
+    border-radius: 70%;
+}
+.productItem__img-border{
+	border-color: white;
+}
+.productItem__descr{
     margin: 0;
     padding-top: 10px;
 	line-height: 1;
-}
-.new_work__item:first-child{
-    padding-left: 50px;
-}
-.new_work__item:last-child{
-    float: right;
-    padding-right: 50px;
-}
-.new_work__item:nth-child(2){
-    margin-left: 100px;
 }
 .all_work{
 	margin-top: 100px;
 }
-.all_work__item{
-    width: 200px;
-    float: left;
-    text-align: center;
-}
-.all_work__item p{
-    margin: 0;
-    padding-top: 10px;
-	line-height: 1;
-}
-.all_work__item:first-child{
-    padding-left: 20px;
-}
-.all_work__item:last-child{
-    float: right;
-    padding-right: 20px;
-}
-.all_work__item:nth-child(2){
-    margin-left: 40px;
-}
-.all_work__item:nth-child(3){
-    margin-left: 40px;
-}
+
 .title_2{
 	float: left;
     font-size: 36px;
@@ -216,24 +195,24 @@ nav{
 .title_2 p{
 	margin: 5px 0 0 0;
 }
-.view_more{
-	text-decoration: none;
-	color: #2a2a29; 
+.btnMore{
 	margin: auto;
 	margin-bottom: 20px;
 	margin-top: 40px;
-	padding: 0;
 	border: 1px solid white;
 	border-radius: 5px;
-	font-size: 24px;
-	display: block;
 	text-align: center;
 	width: 200px;
 }
-.view_more p{
+.btnMore__link{
+	text-decoration: none;
+}
+.btnMore__link-text{
+	color: #2a2a29; 
+	font-size: 24px;
 	margin: 0;
 }
-.view_more:hover{
+.btnMore:hover{
 	text-decoration: none;
 	color: #2a2a29; 
 	background-color: #6bb7d7;
