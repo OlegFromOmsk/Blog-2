@@ -1,8 +1,4 @@
-/*function vis(){
-	var a=document.getElementById('qq');
-	console.log(a.classList);
-	a.classList.remove('productItem-none'); 
-}*/
+
 
 function vis(){
 	var elements = document.querySelectorAll('.productItem-none');
@@ -20,3 +16,11 @@ function vis(){
 		button.disabled = true;
 	}
 }
+
+
+$(function () {
+    var location = window.location.href;
+    var cur_url = '/' + location.split('/').pop();
+ 
+    console.log(cur_url);
+});
