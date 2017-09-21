@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <title>Блог Дарьи Зюзько</title>
     <link rel="stylesheet" href="css/main.css">
-    <SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
-    <script type="text/javascript" src="js/popup_img.js" defer></script>   
-        <script type="text/javascript" src="js/main.js" defer></script>  
+	<script type="text/javascript" src="highslide/easing_equations.js"></script>
+	<script type="text/javascript" src="highslide/highslide-with-gallery.js"></script>
+	<script type="text/javascript" src="highslide/highslide.config.js" charset="utf-8"></script>
+    <link href="highslide/highslide.css" rel="stylesheet" type="text/css" media="screen, projection" />
+    <script type="text/javascript" src="js/main.js" defer></script>
      
 </head>
 <body>
@@ -20,7 +22,7 @@
                     <nav>
                 	    <ul class='header_nav'>
                              <li>
-                                 <a id="Dress" onclick="dressClick()" href="#all_work">Платья</a>
+                                 <a id="Dress" href="#all_work">Платья</a>
                              </li>
                              <li>                                 
                                  <a href="#all_work">Юбки</a>
@@ -38,7 +40,7 @@
                     </nav>
                     <div class="contacts">
                         <p>+7 (960)994 59-31</p>
-                  		<p><a href="#"><img src="img/logo_inst.png" alt="Inst"></a></p>
+                  		<p><a href="https://www.instagram.com/pupsella/"><img src="img/logo_inst.png" alt="Inst"></a></p>
                     </div>
                         
      		</div>
@@ -51,7 +53,7 @@
                         Буду рада новым знакомствам.<br>
                         Помогу с выбором ткани, предоставлю 
                         скидку в крупные магазины города.</p>
-                <img class='pic_face' src="img/pic_face.png" alt="">
+               	<img class='pic_face'  src="img/pic_face.png" alt="Me">
                 <div class="butt_up"></div>
             </div>
    		</section>
@@ -64,22 +66,37 @@
 				</div>
 				<div class="new_work clearfix">
 					<div class="productItem">
-						<img class="productItem__img" src="img/new_1.png" alt="New">
-						<p class="productItem__descr">Блуза с юбкой. <br>
-														Верх - атлас, юбка - хлопок. <br>
-														Срок изготовления от 5 дней.</p>
+						<a class="highslide" href="img/New/p_1.PNG" onclick="return hs.expand(this, {outlineType: 'rounded-white'})">
+							<img class="productItem__img" src="img/New/p_1.PNG" alt="New">
+						</a>
+						<div class='highslide-caption'>
+							Платье-халат из шелка. <br>
+							Срок изготовления от 3 дней.
+						</div>
+						<p class="productItem__descr">Блуза с юбкой.</p>
 					</div>
 					<div class="productItem productItem-left">
-						<img  class="productItem__img" src="img/new_1.png" alt="New">
-						<p class="productItem__descr">Платье-халат из шелка. <br>
-														Срок изготовления от 3 дней.</p>
+						<a class="highslide" href="img/New/p_1.PNG" onclick="return hs.expand(this, {outlineType: 'rounded-white'})">
+							<img class="productItem__img" src="img/New/p_1.PNG" alt="New">
+						</a>
+						<div class='highslide-caption'>
+							Платье-халат из шелка. <br>
+							Срок изготовления от 3 дней.
+						</div>
+						<p class="productItem__descr">Блуза с юбкой.</p>
 					</div>
 					<div class="productItem productItem-left">
-						<img class="productItem__img" src="img/new_1.png" alt="New">
-						<p class="productItem__descr">Платье из шелка с вставками кружев. <br> 
-														Срок изготовления от 5 дней.</p>
+						<a class="highslide" href="img/New/p_1.PNG" onclick="return hs.expand(this, {outlineType: 'rounded-white'})">
+							<img class="productItem__img" src="img/New/p_1.PNG" alt="New">
+						</a>
+						<div class='highslide-caption'>
+							Платье-халат из шелка. <br>
+							Срок изготовления от 3 дней.
+						</div>
+						<p class="productItem__descr">Блуза с юбкой.</p>
 					</div>
 				</div>
+				
 				<div class="butt_up"></div>
 			</div>    
        </section>
@@ -111,29 +128,130 @@
                  </nav>
                 <div class="all_work clearfix">
                     <div class="productItem productItem-firstNew">
-                            <img class="productItem__img productItem__img-border" src="img/dress_1.png" alt="Dress">
-                            <p class="productItem__descr">Блуза с юбкой. <br>
-															Верх - атлас, юбка - хлопок. <br>
-															Срок изготовления от 5 дней.</p>
+						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						</a>
+						<div class='highslide-caption'>
+							Платье-халат из шелка. <br>
+							Срок изготовления от 3 дней.
+						</div>
+						<p class="productItem__descr">Блуза с юбкой.</p>
                     </div>
                     <div class="productItem productItem-leftNew">
-                            <img class="productItem__img productItem__img-border" src="img/dress_2.png" alt="Dress">
-                            <p class="productItem__descr">Платье-халат из шелка. <br>
-                                							Срок изготовления от 3 дней.</p>
+						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						</a>
+						<div class='highslide-caption'>
+							Платье-халат из шелка. <br>
+							Срок изготовления от 3 дней.
+						</div>
+						<p class="productItem__descr">Блуза с юбкой.</p>
                     </div>
                     <div class="productItem productItem-leftNew">
-                            <img class="productItem__img productItem__img-border" src="img/dress_1.png" alt="Dress">
-                            <p class="productItem__descr">Платье из шелка с вставками кружев. <br> 
-                                							Срок изготовления от 5 дней.</p>
+						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						</a>
+						<div class='highslide-caption'>
+							Платье-халат из шелка. <br>
+							Срок изготовления от 3 дней.
+						</div>
+						<p class="productItem__descr">Блуза с юбкой.</p>
                     </div>
                     <div class="productItem productItem-leftNew">
-                            <img class="productItem__img productItem__img-border" src="img/dress_2.png" alt="Dress">
-                            <p class="productItem__descr">Платье из шелка с вставками кружев. <br> 
-                                							Срок изготовления от 5 дней.</p>
+						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						</a>
+						<div class='highslide-caption'>
+							Платье-халат из шелка. <br>
+							Срок изготовления от 3 дней.
+						</div>
+						<p class="productItem__descr">Блуза с юбкой.</p>
+                    </div>
+                    
+                    <div class="productItem productItem-firstNew productItem-none">
+						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						</a>
+						<div class='highslide-caption'>
+							Платье-халат из шелка. <br>
+							Срок изготовления от 3 дней.
+						</div>
+						<p class="productItem__descr">Блуза с юбкой.</p>
+                    </div>
+                    <div class="productItem productItem-leftNew productItem-none">
+						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						</a>
+						<div class='highslide-caption'>
+							Платье-халат из шелка. <br>
+							Срок изготовления от 3 дней.
+						</div>
+						<p class="productItem__descr">Блуза с юбкой.</p>
+                    </div>
+                    <div class="productItem productItem-leftNew productItem-none">
+						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						</a>
+						<div class='highslide-caption'>
+							Платье-халат из шелка. <br>
+							Срок изготовления от 3 дней.
+						</div>
+						<p class="productItem__descr">Блуза с юбкой.</p>
+                    </div>
+                    <div class="productItem productItem-leftNew productItem-none">
+						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						</a>
+						<div class='highslide-caption'>
+							Платье-халат из шелка. <br>
+							Срок изготовления от 3 дней.
+						</div>
+						<p class="productItem__descr">Блуза с юбкой.</p>
+                    </div>
+                    
+                    <div class="productItem productItem-firstNew productItem-none">
+						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						</a>
+						<div class='highslide-caption'>
+							Платье-халат из шелка. <br>
+							Срок изготовления от 3 дней.
+						</div>
+						<p class="productItem__descr">Блуза с юбкой.</p>
+                    </div>
+                    <div class="productItem productItem-leftNew productItem-none">
+						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						</a>
+						<div class='highslide-caption'>
+							Платье-халат из шелка. <br>
+							Срок изготовления от 3 дней.
+						</div>
+						<p class="productItem__descr">Блуза с юбкой.</p>
+                    </div>
+                    <div class="productItem productItem-leftNew productItem-none">
+						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						</a>
+						<div class='highslide-caption'>
+							Платье-халат из шелка. <br>
+							Срок изготовления от 3 дней.
+						</div>
+						<p class="productItem__descr">Блуза с юбкой.</p>
+                    </div>
+                    <div class="productItem productItem-leftNew productItem-none">
+						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						</a>
+						<div class='highslide-caption'>
+							Платье-халат из шелка. <br>
+							Срок изготовления от 3 дней.
+						</div>
+						<p class="productItem__descr">Блуза с юбкой.</p>
                     </div>
                 </div>
                 <div class="btnMore">
-                	<a class="btnMore__link" href="#"><p class="btnMore__link-text">Посмотреть еще...</p></a>
+                	<button enable id="butt" onclick="vis()">Посмотреть еще...</button>
                 </div>
                 <div class="butt_up"></div>
            </div>
@@ -152,7 +270,7 @@
 					</div>
 					<div class="contacts">
 						<p>+7 (960)994 59-31</p>
-						<p><a href="#"><img src="img/logo_inst.png" alt="Inst"></a></p>
+						<p><a href="https://www.instagram.com/pupsella/"><img src="img/logo_inst.png" alt="Inst"></a></p>
 					</div>
    				</div>
     		</div>				
