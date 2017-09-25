@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Блог Дарьи Зюзько</title>
@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
     <link href="highslide/highslide.css" rel="stylesheet" type="text/css" media="screen, projection" />
     <script type="text/javascript" src="js/main.js"></script>
+    <link href="img/Dress/descr.txt">
 
  
 </head>
@@ -21,7 +22,7 @@
 						<p class="header_text_1">Darya Zyuzko</p>
 						<p class="header_text_2">Индивидуальный пошив одежды</p>
 					</div>
-                    <nav>
+                    <!--<nav>
                         <ul class='header_nav'>
                             <li><a href="#" alt="Dress">Платья</a></li>
                             <li><a href="#" alt="Skirt">Юбки</a></li>
@@ -29,7 +30,7 @@
                             <li><a href="#" alt="Pants">Брюки</a></li>
                             <li><a href="#" alt="Outerwear">Верхняя одежда</a></li>
                         </ul>
-                    </nav>
+                    </nav>-->
                     <div class="contacts">
                         <p>+7 (960)994 59-31</p>
                   		<p><a href="https://www.instagram.com/pupsella/"><img src="img/logo_inst.png" alt="Inst"></a></p>
@@ -39,12 +40,14 @@
    		
    		<section>
    			<div class="container">
-                <p class="info_text" >Приветствую Вас в моем блоге. <br>
-                        Шью много и качественно.<br>
-                        Буду рада новым знакомствам.<br>
-                        Помогу с выбором ткани, предоставлю 
-                        скидку в крупные магазины города.</p>
-               	<img class='pic_face'  src="img/pic_face.png" alt="Me">
+               <div class="info">
+					<p class="info_text" >Приветствую Вас в моем блоге. <br>
+							Шью много и качественно.<br>
+							Буду рада новым знакомствам.<br>
+							Помогу с выбором ткани, предоставлю 
+							скидку в крупные магазины города.</p>
+					<img class='info_img'  src="img/pic_face.png" alt="Me">
+               	</div>
                 <div class="butt_up"></div>
             </div>
    		</section>
@@ -55,10 +58,10 @@
 				<div class="title">
 					<p>Из нового</p>
 				</div>
-				<div class="new_work clearfix">
+				<div class="new_work">
 					<div class="productItem">
-						<a class="highslide" href="img/New/p_1.PNG" onclick="return hs.expand(this, {outlineType: 'rounded-white'})">
-							<img class="productItem__img" src="img/New/p_1.PNG" alt="New">
+						<a class="highslide" href="img/New/p_1.jpg" onclick="return hs.expand(this, {outlineType: 'rounded-white'})">
+							<img class="productItem__img" src="img/New/p_1_s.jpg" alt="New">
 						</a>
 						<div class='highslide-caption'>
 							Платье-халат из шелка. <br>
@@ -66,9 +69,9 @@
 						</div>
 						<p class="productItem__descr">Блуза с юбкой.</p>
 					</div>
-					<div class="productItem productItem-left">
-						<a class="highslide" href="img/New/p_1.PNG" onclick="return hs.expand(this, {outlineType: 'rounded-white'})">
-							<img class="productItem__img" src="img/New/p_1.PNG" alt="New">
+					<div class="productItem">
+						<a class="highslide" href="img/New/p_2.jpg" onclick="return hs.expand(this, {outlineType: 'rounded-white'})">
+							<img class="productItem__img" src="img/New/p_2_s.jpg" alt="New">
 						</a>
 						<div class='highslide-caption'>
 							Платье-халат из шелка. <br>
@@ -76,9 +79,9 @@
 						</div>
 						<p class="productItem__descr">Блуза с юбкой.</p>
 					</div>
-					<div class="productItem productItem-left">
-						<a class="highslide" href="img/New/p_1.PNG" onclick="return hs.expand(this, {outlineType: 'rounded-white'})">
-							<img class="productItem__img" src="img/New/p_1.PNG" alt="New">
+					<div class="productItem">
+						<a class="highslide" href="img/New/p_3.jpg" onclick="return hs.expand(this, {outlineType: 'rounded-white'})">
+							<img class="productItem__img" src="img/New/p_3_s.jpg" alt="New">
 						</a>
 						<div class='highslide-caption'>
 							Платье-халат из шелка. <br>
@@ -100,11 +103,11 @@
                 </div>
                 <nav>
                     <ul class='header_nav'>
-                            <li><a href="#" alt="Dress">Платья</a></li>
-                            <li><a href="#" alt="Skirt">Юбки</a></li>
-                            <li><a href="#" alt="Blouse">Блузы</a></li>
-                            <li><a href="#" alt="Pants">Брюки</a></li>
-                            <li><a href="#" alt="Outerwear">Верхняя одежда</a></li>
+                            <li><a alt="Dress">Платья</a></li>
+                            <li><a alt="Skirt">Юбки</a></li>
+                            <li><a alt="Blouse">Блузы</a></li>
+                            <li><a alt="Pants">Брюки</a></li>
+                            <li><a alt="Outerwear">Верхняя одежда</a></li>
                     </ul>
                 </nav>
                 <div class="all_work clearfix">
@@ -150,8 +153,8 @@
                     </div>
                     
                     <div class="productItem productItem-firstNew productItem-none">
-						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
-							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						<a href="img/Dress/p_5.jpg" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_5_s.jpg" alt="Dress">
 						</a>
 						<div class='highslide-caption'>
 							Платье-халат из шелка. <br>
@@ -160,8 +163,8 @@
 						<p class="productItem__descr">Блуза с юбкой.</p>
                     </div>
                     <div class="productItem productItem-leftNew productItem-none">
-						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
-							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						<a href="img/Dress/p_6.jpg" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_6_s.jpg" alt="Dress">
 						</a>
 						<div class='highslide-caption'>
 							Платье-халат из шелка. <br>
@@ -170,8 +173,8 @@
 						<p class="productItem__descr">Блуза с юбкой.</p>
                     </div>
                     <div class="productItem productItem-leftNew productItem-none">
-						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
-							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						<a href="img/Dress/p_7.jpg" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_7_s.jpg" alt="Dress">
 						</a>
 						<div class='highslide-caption'>
 							Платье-халат из шелка. <br>
@@ -180,8 +183,8 @@
 						<p class="productItem__descr">Блуза с юбкой.</p>
                     </div>
                     <div class="productItem productItem-leftNew productItem-none">
-						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
-							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						<a href="img/Dress/p_8.jpg" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_8_s.jpg" alt="Dress">
 						</a>
 						<div class='highslide-caption'>
 							Платье-халат из шелка. <br>
@@ -191,8 +194,8 @@
                     </div>
                     
                     <div class="productItem productItem-firstNew productItem-none">
-						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
-							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						<a href="img/Dress/p_9.jpg" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_9_s.jpg" alt="Dress">
 						</a>
 						<div class='highslide-caption'>
 							Платье-халат из шелка. <br>
@@ -201,8 +204,8 @@
 						<p class="productItem__descr">Блуза с юбкой.</p>
                     </div>
                     <div class="productItem productItem-leftNew productItem-none">
-						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
-							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						<a href="img/Dress/p_10.jpg" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_10_s.jpg" alt="Dress">
 						</a>
 						<div class='highslide-caption'>
 							Платье-халат из шелка. <br>
@@ -211,8 +214,8 @@
 						<p class="productItem__descr">Блуза с юбкой.</p>
                     </div>
                     <div class="productItem productItem-leftNew productItem-none">
-						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
-							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						<a href="img/Dress/p_11.jpg" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_11_s.jpg" alt="Dress">
 						</a>
 						<div class='highslide-caption'>
 							Платье-халат из шелка. <br>
@@ -221,8 +224,8 @@
 						<p class="productItem__descr">Блуза с юбкой.</p>
                     </div>
                     <div class="productItem productItem-leftNew productItem-none">
-						<a href="img/Dress/p_1.PNG" onclick="return hs.expand(this, config1)">
-							<img class="productItem__img productItem__img-border" src="img/Dress/p_1.PNG" alt="Dress">
+						<a href="img/Dress/p_12.jpg" onclick="return hs.expand(this, config1)">
+							<img class="productItem__img productItem__img-border" src="img/Dress/p_12_s.jpg" alt="Dress">
 						</a>
 						<div class='highslide-caption'>
 							Платье-халат из шелка. <br>

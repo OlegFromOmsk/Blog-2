@@ -56,7 +56,7 @@ nav{
     display: block;
     margin: 0;
     padding: 0;
-}
+} 
 .header_nav li{
     float: left;
     display: block;
@@ -72,6 +72,7 @@ nav{
     border-bottom: 1px solid;
     padding: 5px 0;
     text-decoration: none;
+	cursor: pointer;
 }
 .contacts{
 	display: block;
@@ -81,34 +82,29 @@ nav{
     margin: 0;
     padding: 0;
 }
+.info{
+	max-width: 960px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
 .info_text{
-    height: 220px;
-    margin: 40px 0 56px 100px;
-	padding: 0 0 0 30px;
+	padding: 0 0 20px 30px;
 	border-left: 1px solid #2a2a29;
 	border-bottom: 1px solid #2a2a29;
     font-size: 36px;
-    width: 560px;
     line-height: 1;
-    float: left;
-    display: block;
+	flex: 0 1 600px;
 }
-.pic_face{
-    padding-top: 70px;
-    padding-left: 40px;
-    padding-bottom: 50px;
+.info_img{
+	align-self: center;
 }
-#info{
-    height: 400px;
-}
-
 .butt_up{
     height: 27px;
     width: 54px;
     background: url(../img/butt.png);
     margin: 0 auto;
 }
-
 .butt_down{
     height: 27px;
     width: 54px;
@@ -128,21 +124,20 @@ nav{
 	padding: 0;
 }
 .new_work{
-	margin: auto;
+	/*margin: auto;*/
 	margin-bottom: 15px;
+	display: flex;
+	justify-content: space-around;
 }
 .productItem{
     width: 200px;
     float: left;
     text-align: center;
-	margin-left: 80px;
+	/*margin-left: 80px;*/
 	margin-bottom: 20px;
 }
 .productItem-firstNew{
 	margin-left: 25px;
-}
-.productItem-left{
-	margin-left: 100px;
 }
 .productItem-leftNew{
 	margin-left: 40px;
