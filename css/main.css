@@ -9,6 +9,9 @@ body{
     color: #2a2a29;
     background-color: #9cd9f1;
 }
+.none{
+	display: none !important;
+}
 header{
     margin: 0 auto;
     width: 960px;
@@ -160,6 +163,10 @@ nav{
     padding-top: 10px;
 	line-height: 1;
     font-size: 20px;
+	display: none !important;
+}
+.highslide-caption{
+	display: none !important;
 }
 .all_work{
 	margin-top: 100px;
