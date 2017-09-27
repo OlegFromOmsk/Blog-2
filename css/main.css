@@ -46,14 +46,13 @@ header{
     font-size: 14px;
     margin: 0;
 }
+.liner{
+	text-decoration: underline;
+}
 nav{
     float: left;
     margin-left: 75px;
     padding-top: 10px;
-}
-.active {
-    border-top: 1px solid;
-    border-bottom: 1px solid;
 }
 .header_nav{
     display: block;
@@ -67,8 +66,12 @@ nav{
 }
 .header_nav a{
     font-size: 26px;
-    color: #2a2a29;
-    text-decoration: underline;
+	padding: 5px 0;
+}
+.active {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+	text-decoration: none;
 }
 .header_nav a:hover{
     border-top: 1px solid;

@@ -32,7 +32,10 @@ function ReadText(names){
 $(document).ready(function(){
     $("nav a").click(function(){
         var Alt = $(this).attr("alt");
-		/*$(this).classList.add('active');*/
+		$("nav a").removeClass("active");
+		$("nav a").addClass("liner");
+		$(this).addClass("active");
+		$(this).removeClass("liner");
 
  console.log('1');       
         var elements = document.querySelectorAll('.all_work .productItem');
@@ -54,6 +57,6 @@ console.log(arr[index]);
         });
  console.log('5');
 		ReadText(Alt);	
-console.log('5');
+console.log('6');
     });
  });
